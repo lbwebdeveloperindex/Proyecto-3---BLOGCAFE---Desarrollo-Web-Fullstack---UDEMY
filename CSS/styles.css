@@ -69,6 +69,10 @@ img { max-width: 100%; }
 
 @media(min-width: 768px) { .header__texto { margin-top: 15rem; } }
 
+.barra {
+    padding-top: 4rem;
+}
+
 @media(min-width: 768px) {
     .barra {
         display: flex;
@@ -97,10 +101,6 @@ img { max-width: 100%; }
     color: var(--blanco);
 }
 
-.contenedor {
-
-}
-
 @media(min-width: 768px) {
     .contenido-principal {
         display: grid;
@@ -108,6 +108,8 @@ img { max-width: 100%; }
         column-gap: 4rem;
     }
 }
+
+/*MAIN*/
 
 .entrada {
     border-bottom: 1px solid var(--gris);
@@ -156,4 +158,34 @@ img { max-width: 100%; }
 
 .widget-curso__info { font-weight: normal; }
 
-.widget-curso__label, .widget-curso__info { font-size: 2rem; }
+.widget-curso__label, 
+.widget-curso__info { font-size: 2rem; }
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/*SOBRE NOSOTROS*/
+
+@media(min-width: 768px) {
+
+    /*Forma antígüa*/
+    /* .sobre-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre-nosotros__texto,
+    .sobre-nosotros__imagen {flex: 0 0 calc(50% - 1rem);} */
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+}
