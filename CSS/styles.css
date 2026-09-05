@@ -219,5 +219,11 @@ img { max-width: 100%; }
 .curso__label, 
 .curso__info { font-size: 2rem; }
 
-/*ENTRADA*/
+/*CONTACTO*/
 
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
