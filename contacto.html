@@ -37,9 +37,22 @@
 
         <div class="contacto-bg"></div>
 
-        <form>
-            <fieldset></fieldset>
-
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label> <!--For sirve para accesibilidad web-->
+                <input type="text" placeholder="Tu nombre" class="campo__field" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">Tu email</label> <!--Al hacer click en el label selecciona el elemento que posee el mismo id que el for-->
+                <input type="email" placeholder="Tu email" class="campo__field" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label campo__field--textarea" for="mensaje">Mensaje</label>
+                <textarea class="campo__field" id="mensaje"></textarea>
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
         </form>
     </main>
 
